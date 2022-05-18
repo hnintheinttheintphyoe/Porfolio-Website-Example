@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,400&family=Send+Flowers&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background: #f1faee;
+}
+.site-nav{
+    /* position: absolute; */
+    top: 0;
+    z-index: 80;
+    background-color: #403d39!important;
+}
+.home{
+    background-color: #0f0f0e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 70;
+}
+.site-nav .site-nav-bar{
+    
+    position: sticky !important;
+    top: 0;
+    background: #0f0f0e;
+    
+    
+ }
+.brand-name{
+    font-size: 2em;
+    
+}
+.home{
+    position: relative;
+   
+    background-image: url(images/hero-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.name{
+    z-index: 51;
+    height: 100vh;
+    
+}
+.name-text{
+    font-size: 4em;
+}
+.name-sub-text{
+    display: grid;
+    /* height: 100vh; */
+    place-items: center;
+}
+.typed{
+    width:320px;
+    animation: typing 5s steps(50), 2s blink step-end infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2em;
+    border-right: 2px solid;
+
+}
+.about,.service{
+    background: #f1faee;
+    /* height: 100vh; */
+    margin-top: 30px;
+}
+.about-box{
+    padding-top: 50px;
+}
+.divider{
+    width: 20%;
+    height: 3px;
+    border-radius: 5px;
+    background: blue;
+}
+.me-text{
+    font-size: 20px;
+    line-height: 2;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    
+}
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  /* service */
+  .service{
+      height: 100vh;
+  }
+  .service-title{
+      font-size: 3em;
+      font-weight: 800;
+
+  }
+  .circle{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 10px solid #219ebc;
+      margin: 0 auto;
+      transition: 0.5s;
+  }
+  .circle:hover{
+      background: #219ebc;
+      border: 10px solid #8ecae6;
+  }
+  i{
+      color: #023047 !important;
+  }
+  .circle:hover i{
+      color: #ffffff !important;
+  }
+  .divider2{
+      margin: 0 auto;
+    width: 5%;
+    height: 5px;
+    border-radius: 5px;
+    background: blue;
+
+  }
+  .card-border{
+      border-radius: 1.25rem;
+      margin-bottom: 50px;
+  }
+ .service-counter-bg{
+     background-image: url(images/counters-bg.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     height: 400px;
+     position: relative;
+ }
+ .counter-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    margin: 0 auto;
+    
+    transition: 0.5s;
+ }
+ .counter-box{
+     margin-right: 130px;
+     color: #fff;
+     z-index: 65;
+ }
+ .counter-last{
+     z-index: 65;
+ }
+ .service-bg-color{
+     background-color: #0078ff;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 400px;
+     opacity: 0.7;
+ }
+ /* services */
+ .work{
+     height: 100vh;
+     margin-top: 500px;
+ }
+ .card{
+    
+ }
+ .img-box{
+    overflow: hidden;
+ }
+ .card-img{
+    transition: 0.5s;
+
+ }
+ .card:hover .card-img{
+     transform: scale(1.4);
+ }
+ .work-bg{
+     background-image: url(images/overlay-bg.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     height: 500px;
+     position: relative;
+ }
+ .work-bg-color{
+     background-color: #0078ff;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     opacity: 0.7;
+ }
+ .work-bg-box{
+     z-index: 60;
+     margin-top: 100px;
+     /* padding: 50px; */
+     
+ }
+ .work-bg-img{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin: 0 auto;
+ }
+ 
+ .slick-dots{
+     margin-bottom: 80px !important;
+ }
+ .slick-dots li{
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     z-index: 90;
+    background-color: #e3e3e3;
+     
+ }
+ .slick-dots .slick-active{
+     background: #8ecae6;
+ }
+ /* BLOG */
+ .blog{
+     margin-top: 700px;
+     height: 100vh;
+ }
+ .divider3{
+     width: 100%;
+     height: 1px;
+     /* border: 1px solid gray; */
+     background: rgb(153, 152, 152);
+ }
+ .blog-card{
+     position: relative;
+ }
+ .blog-person{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+ .blog-btn{
+     position: absolute;
+     top: 258px;
+    left: 143px;
+ }
+ 
