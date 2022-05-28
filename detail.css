@@ -1,0 +1,129 @@
+/* porfolio-detail */
+.porfolio-detail{
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+    
+   
+
+}
+.fixed-top{
+    position:fixed;
+    top: 0;
+}
+.detail-home{
+position: relative;
+    background-image: url(images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 350px;
+    
+}
+.detail-color{
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    opacity: 0.6;
+} 
+.detail-home-box{
+    margin-top: 200px !important;
+    position: absolute;
+    left: 550px;
+    z-index: 40;
+    
+    
+    
+    
+}
+.detail-home-title{
+    font-size: 56px !important;
+    text-transform: uppercase;
+    
+}
+.breadcrumb{
+    margin-left: 147px;
+}
+.breadcrumb-item a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.pd{
+    color: #e3e3e3 !important;
+}
+.detail{
+    /* height: 100vh; */
+}
+.slick-dots{
+    margin-bottom: 0px !important;
+}
+.slick-dots li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #0078ff;
+}
+.slick-dots .slick-active{
+    background-color: #0078ff !important;
+}
+.detail-card{
+     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; 
+    background: #f6fff8 !important;
+    
+}
+.detail-divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 0 20px;
+    background: rgb(245, 243, 243);
+    padding: 0 30px;
+    
+}
+.footer-box{
+    background-color: #0078ff;
+    width: 100%;
+    height: 100px;
+}
+/* blog-detail */
+.blog-detail{}
+.blog-bg{
+    background-color: #fff;
+    /* height: 100vh; */
+}
+.blog-line{
+    width: 5px;
+    height: 25px;
+    background: #0078ff;
+}
+.blog-line2{
+    width: 5px;
+    height: 100px;
+    background: #0078ff;
+}
+.blog-line3{
+    width: 5px;
+    height: 40px;
+    background: #0078ff;
+}
+.line-small{
+    width: 15px;
+    height: 1px;
+    background: #0078ff;
+}
+.blog-detail-btn{
+    border-radius: 2rem;
+}
+.comment-line{
+    width: 100px;
+    border: 1px solid #0078ff;
+    background-color: #0078ff;
+}
+.replay-btn{
+    border-radius: 1.25rem;
+}
+.active{
+    color: #0078ff;
+}

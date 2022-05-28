@@ -23,7 +23,7 @@ TxtType.prototype.tick = function() {
 
   var that = this;
   var delta = 200 - Math.random() * 100;
-  console.log(delta);
+  // console.log(delta);
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -56,3 +56,79 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+
+
+
+
+$(".navbar-toggler").click(function(){
+  let result=$(".menu-icon").hasClass("fa-bars");
+  console.log(result);
+  if(result){
+    $(".menu-icon").removeClass("fa-bars").addClass("fa-times");
+    
+  }
+  else{
+    $(".menu-icon").removeClass("fa-times").addClass("fa-bars");
+  }
+});
+
+
+
+
+let screenHeight=$(window).height();
+console.log(screenHeight);
+
+
+$(window).scroll(function(){
+  
+  let currentHeight=$(this).scrollTop();
+  console.log(currentHeight);
+  
+  if(screenHeight-100 > currentHeight && currentHeight > 97){
+    setActive("home");
+    $(".scroll-to-home").removeClass("d-none");
+    $(".scroll-to-home").addClass("d-block");
+    
+  }
+  else if(currentHeight == 0){
+    $(".scroll-to-home").removeClass("d-block");
+    $(".scroll-to-home").addClass("d-none");
+  }
+  
+
+  
+    
+})
+function setActive(current){
+  $(".nav-link").removeClass("active");
+  $(`.nav-link[href='#${current}']`).addClass("active");
+}
+function navScroll(){
+  let currentPosition=$("section[id]");
+  currentPosition.waypoint(
+    function(direction){
+      if(direction== 'down'){
+        let currentId=$(this.element).attr("id");
+        console.log(currentId);
+        setActive(currentId);
+        
+      }
+},
+{
+  offset: "10%",
+});
+currentPosition.waypoint(
+  function(direction){
+    if(direction== 'up'){
+      let currentId=$(this.element).attr("id");
+      console.log(currentId);
+      setActive(currentId);
+    }
+},
+{
+offset: "10%",
+});
+}
+navScroll();
+
