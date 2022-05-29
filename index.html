@@ -1,10 +1,88 @@
 <!DOCTYPE html>
+<div class="loader-container">
+  <div class="loader">Loading...</div>
+</div>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="SHORTCUT ICON" href="images/favicon.ico" />
+     
+  <style>
+    .loader-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 2000;
+      
+    }
+    .loader,
+.loader:before,
+.loader:after {
+background: #1c1212;
+-webkit-animation: load1 1s infinite ease-in-out;
+animation: load1 1s infinite ease-in-out;
+width: 1em;
+height: 4em;
+}
+.loader {
+color: #1c1212;
+text-indent: -9999em;
+margin: 88px auto;
+position: relative;
+font-size: 11px;
+-webkit-transform: translateZ(0);
+-ms-transform: translateZ(0);
+transform: translateZ(0);
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+position: absolute;
+top: 0;
+content: '';
+}
+.loader:before {
+left: -1.5em;
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+.loader:after {
+left: 1.5em;
+}
+@-webkit-keyframes load1 {
+0%,
+80%,
+100% {
+  box-shadow: 0 0;
+  height: 4em;
+}
+40% {
+  box-shadow: 0 -2em;
+  height: 5em;
+}
+}
+@keyframes load1 {
+0%,
+80%,
+100% {
+  box-shadow: 0 0;
+  height: 4em;
+}
+40% {
+  box-shadow: 0 -2em;
+  height: 5em;
+}
+}
+</style>
+    
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="vendor/slick-1.8.0/slick/slick.css">
@@ -12,6 +90,11 @@
     <link rel="stylesheet" href="vendor/Animate-it/animate.min.css">
     
     <link rel="stylesheet" href="style.css">
+    
+ 
+
+
+    </style>
 </head>
 <body>
   <a href="#home" class="scroll-to-home d-flex justify-content-center align-items-center shadow d-none">
@@ -61,7 +144,7 @@
          <div class="col-12">
              <div class="p-5  text-white name d-flex justify-content-center align-items-center">
                <div>
-                <h1 class=" name-text">I am Morgan Freeman</h1>
+                <h1 class=" name-text wow animate__bounce">I am Morgan Freeman</h1>
                 
                   <h2 class="typewrite text-center" data-period="2000" data-type='[ "Junior Web Delveloper", "Freelancer", "Junior PHP Developer" ]'>
                     <span class="wrap"></span>
@@ -79,7 +162,7 @@
     
     <section id="about" class="about container-fluid">
        <div class="container about-box">
-          <div class="row bg-white about-row p-5 ">
+          <div class="row bg-white about-row p-5 wow animate__backInDown">
             <div class="col-12 col-md-6">
               <div>
                 <div class="d-flex">
@@ -133,9 +216,9 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center">
-              <h1 class="service-title ">SERVICES</h1>
-              <p class="">Lorem ipsum dolor sit amet consectetur </p>
-              <div class="divider2 mb-5"></div>
+              <h1 class="service-title wow animate__fadeInDown">SERVICES</h1>
+              <p class="wow animate__fadeInLeft">Lorem ipsum dolor sit amet consectetur </p>
+              <div class="divider2 mb-5 wow animate__fadeInRight"></div>
             </div>
             
           </div>
@@ -146,7 +229,7 @@
               <div class="card service-card border-0 shadow card-border wow animate__fadeInLeft animation-delay3">
                 <div class="card-body text-center">
                   <div class="circle mb-3 mt-2 d-flex justify-content-center align-items-center">
-                    <i class="fas fa-briefcase fa-3x wow animate__zoomIn animation-delay6"></i>
+                    <i class="fas fa-briefcase fa-3x wow animate__zoomIn animation-delay4"></i>
                   </div>
                   <div>
                     <h4 class="m-4">WEB DESIGN</h4>
@@ -162,7 +245,7 @@
               <div class="card service-card border-0 shadow card-border wow animate__fadeInLeft animation-delay2">
                 <div class="card-body text-center">
                   <div class="circle mb-3 mt-2 d-flex justify-content-center align-items-center">
-                    <i class="fas fa-atlas fa-3x wow animate__zoomIn animation-delay5"></i>
+                    <i class="fas fa-atlas fa-3x wow animate__zoomIn animation-delay3"></i>
                   </div>
                   <div>
                     <h4 class="m-4">WEB DEVELPOMENT</h4>
@@ -179,7 +262,7 @@
               animation-delay1">
                 <div class="card-body text-center">
                   <div class="circle mb-3 mt-2 d-flex justify-content-center align-items-center text-primary">
-                    <i class="far fa-chart-bar fa-3x wow animate__zoomIn animation-delay4"></i>
+                    <i class="far fa-chart-bar fa-3x wow animate__zoomIn animation-delay2"></i>
                   </div>
                   <div>
                     <h4 class="m-4">PHOTOGRAPHY</h4>
@@ -196,7 +279,7 @@
               animation-delay1">
                 <div class="card-body text-center">
                   <div class="circle mb-3 mt-2 d-flex justify-content-center align-items-center">
-                    <i class="fas fa-columns fa-3x wow animate__zoomIn animation-delay4"></i>
+                    <i class="fas fa-columns fa-3x wow animate__zoomIn animation-delay2"></i>
                   </div>
                   <div>
                     <h4 class="m-4">PHOTOGRAPHY</h4>
@@ -213,7 +296,7 @@
               animation-delay2">
                 <div class="card-body text-center ">
                   <div class="circle mb-3 mt-2 d-flex justify-content-center align-items-center">
-                    <i class="far fa-sun fa-3x wow animate__zoomIn animation-delay5"></i>
+                    <i class="far fa-sun fa-3x wow animate__zoomIn animation-delay3"></i>
                   </div>
                   <div>
                     <h4 class="m-4">PHOTOGRAPHY</h4>
@@ -230,7 +313,7 @@
               animation-delay3">
                 <div class="card-body text-center">
                   <div class="circle mb-3 mt-2 d-flex justify-content-center align-items-center">
-                    <i class="far fa-calendar-alt fa-3x wow animate__zoomIn animation-delay6 "></i>
+                    <i class="far fa-calendar-alt fa-3x wow animate__zoomIn animation-delay4 "></i>
                   </div>
                   <div>
                     <h4 class="m-4">PHOTOGRAPHY</h4>
@@ -294,15 +377,15 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center mt-5">
-              <h1 class="service-title ">PORTFOLIO</h1>
-              <p class="">Lorem ipsum dolor sit amet consectetur </p>
-              <div class="divider2 mb-5"></div>
+              <h1 class="service-title wow animate__fadeInDown">PORTFOLIO</h1>
+              <p class="wow animate__fadeInLeft">Lorem ipsum dolor sit amet consectetur </p>
+              <div class="divider2 mb-5 wow animate__fadeInRight"></div>
             </div>
           </div>
         </div>
         <div class="row mb-5">
           <div class="col-12 col-md-4">
-           <div class="card border-0 rounded shadow">
+           <div class="card border-0 rounded shadow wow animate__rollIn">
              <div class="img-box">
              <img src="images/work-1.jpg" class="card-image-top card-img" alt="">
             </div>
@@ -321,7 +404,7 @@
 
           </div>
           <div class="col-12 col-md-4">
-            <div class="card border-0 rounded shadow">
+            <div class="card border-0 rounded shadow wow animate__rollIn">
               <div class="img-box">
               <img src="images/work-2.jpg" class="card-image-top card-img" alt="">
             </div>
@@ -339,7 +422,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card border-0 rounded shadow">
+            <div class="card border-0 rounded shadow wow animate__rollIn">
               <div class="img-box">
               <img src="images/work-3.jpg" class="card-image-top card-img" alt="">
             </div>
@@ -357,7 +440,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card border-0 rounded shadow mt-5">
+            <div class="card border-0 rounded shadow mt-5 wow animate__rollIn animation-delay1">
               <div class="img-box">
               <img src="images/work-4.jpg" class="card-image-top card-img" alt="">
             </div>
@@ -375,7 +458,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card border-0 rounded shadow mt-5">
+            <div class="card border-0 rounded shadow mt-5 wow animate__rollIn animation-delay1">
               <div class="img-box">
               <img src="images/work-5.jpg" class="card-image-top card-img" alt="">
             </div>
@@ -393,7 +476,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card border-0 rounded shadow mt-5">
+            <div class="card border-0 rounded shadow mt-5 wow animate__rollIn animation-delay1">
               <div class="img-box">
               <img src="images/work-6.jpg" class="card-image-top card-img" alt="">
             </div>
@@ -440,9 +523,9 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center mt-5">
-              <h1 class="service-title ">BLOG</h1>
-              <p class="">Lorem ipsum dolor sit amet consectetur </p>
-              <div class="divider2 mb-5"></div>
+              <h1 class="service-title wow animate__lightSpeedInRight">BLOG</h1>
+              <p class="wow animate__lightSpeedInLeft">Lorem ipsum dolor sit amet consectetur </p>
+              <div class="divider2 mb-5 wow animate__lightSpeedInRight"></div>
             </div>
           </div>
         </div>
@@ -528,7 +611,7 @@
       <div class="contact-bg"></div>
       <div class="container">
         <div class="row">
-          <div class="col-12 up-bg mb-5">
+          <div class="col-12 up-bg mb-5 wow animate__flipInX">
             <form class="row p-4">
               <div class="col-12 col-md-6">
             <h4 class="m-4">Send Message Us</h4>
@@ -583,9 +666,9 @@
       <div class="row">
         <div class="col-12 footer-bg">
           <div class="text-center text-white mt-4" style="z-index: 75;opacity: 1;">
-            <p>© Copyright DevFolio. All Rights Reserved</p>
+            <p class="wow animate__lightSpeedInLeft animation-delay2">© Copyright DevFolio. All Rights Reserved</p>
 
-            <p>  Designed by BootstrapMade</p>
+            <p class="wow animate__lightSpeedInRight animation-delay2">  Designed by BootstrapMade</p>
           </div>
 
         </div>

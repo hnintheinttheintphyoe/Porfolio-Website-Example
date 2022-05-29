@@ -2,11 +2,10 @@
 .porfolio-detail{
     position: absolute;
     width: 100%;
-    z-index: 50;
+    z-index: 100;
     
-   
-
 }
+
 .fixed-top{
     position:fixed;
     top: 0;
@@ -126,4 +125,28 @@ position: relative;
 }
 .active{
     color: #0078ff;
+}
+@media screen and (max-width:760px) {
+   
+    .container-fluid{
+        max-width: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .detail-home-box{
+        margin-top: 100px !important;
+        left: 40px;
+    }
+    .breadcrumb{
+        margin-left: 60px;
+    }
+    .slick-dots{
+        margin-bottom: 42px !important;
+    }
+    .blog-detail-card{
+        margin-top: 10px;
+    }
+    .text-email{
+        margin-top: 10px;
+    }
 }

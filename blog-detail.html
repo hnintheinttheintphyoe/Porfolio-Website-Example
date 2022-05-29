@@ -23,7 +23,7 @@
               <div class="container">
                 <a class="navbar-brand brand-name fw-bold text-white" href="#">Devfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <i class="fas fa-bars menu-icon text-white fa-2x"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
@@ -59,9 +59,9 @@
             <div class="row">
               <div class="col-12">
                 <div class=" detail-home-box ">
-                  <h1 class="fw-bold detail-home-title text-white">Portfolio Details</h1>
+                  <h1 class="fw-bold detail-home-title text-white wow animate__backInDown">Portfolio Details</h1>
                   <nav aria-label="breadcrumb ">
-                    <ol class="breadcrumb ">
+                    <ol class="breadcrumb wow animate__backInLeft">
                       <li class="breadcrumb-item "><a href="#">Home</a></li>
                       <li class="breadcrumb-item pd" aria-current="page ">Portfolio Details</li>
                     </ol>
@@ -74,11 +74,11 @@
       </div>
       <div class="container blog-detail my-5">
           <div class="row">
-              <div class="col-8 blog-bg">
+              <div class="col-12 col-md-8 blog-bg">
                   <div class="p-4 ">
-                      <img src="images/post-1.jpg" class=" w-100" alt="">
+                      <img src="images/post-1.jpg" class=" w-100 wow animate__rollIn" alt="">
                       
-                      <h3 class="my-3">Lorem ipsum dolor sit amet consec tetur adipisicing</h3>
+                      <h3 class="my-3 wow animate__slideInLeft">Lorem ipsum dolor sit amet consec tetur adipisicing</h3>
                       <div class="d-flex mb-3">
                           <div class="blog-line me-3"></div>
                           <div class="me-3"> 
@@ -114,8 +114,8 @@
                       
                   </div>
               </div>
-              <div class="col-4 ">
-                  <div class="card border-0 shadow p-3 mb-5">
+              <div class="col-12 col-md-4 ">
+                  <div class="card blog-detail-card border-0 shadow p-3 mb-5">
                       <div class="card-body">
                           <div class="d-flex">
                             <div class="blog-line3 me-3"></div>
@@ -202,7 +202,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-8 blog-bg">
+          <div class="col-12 col-md-8 blog-bg">
             <div class="p-4">
               <h3>Comments 34</h3>
               <div class="comment-line"></div>
@@ -256,7 +256,7 @@
       </div>
       <div class="container my-5">
         <div class="row">
-          <div class="col-8 blog-bg">
+          <div class="col-12 col-md-8 blog-bg">
           <div class="p-4">
             <h3 class="fw-bold mt-3">Leave a reply</h3>
             <div class="comment-line"></div>
@@ -266,7 +266,7 @@
                   <input type="text" class="form-control" placeholder="Name*">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder="Email*">
+                  <input type="text" class="form-control text-email" placeholder="Email*">
                 </div>
               </div>
               <input type="url" class="form-control my-3" placeholder="Website">
@@ -294,6 +294,7 @@
       <script src="vendor/way-point/jquery.waypoints.js"></script>
       <script src="vendor/jquery.counterup.min.js"></script>
       <script src="vendor/slick-1.8.0/slick/slick.js"></script>
+      <script src="vendor/WOW/wow.min.js"></script>
       <script src="main.js"></script>
       <script>
          var waypoints = $('.detail-home-title').waypoint(function(){
@@ -306,6 +307,16 @@
           offset:'5%'
         }
          );
+         wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
       </script>
 </body>
 </html>

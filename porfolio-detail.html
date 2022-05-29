@@ -25,7 +25,7 @@
               <div class="container">
                 <a class="navbar-brand brand-name fw-bold text-white" href="#">Devfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <i class="fas fa-bars menu-icon text-white fa-2x"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
@@ -61,9 +61,9 @@
             <div class="row">
               <div class="col-12">
                 <div class=" detail-home-box ">
-                  <h1 class="fw-bold detail-home-title text-white">Portfolio Details</h1>
+                  <h1 class="fw-bold detail-home-title text-white wow animate__backInDown">Portfolio Details</h1>
                   <nav aria-label="breadcrumb ">
-                    <ol class="breadcrumb ">
+                    <ol class="breadcrumb wow animate__backInLeft">
                       <li class="breadcrumb-item "><a href="#">Home</a></li>
                       <li class="breadcrumb-item pd" aria-current="page ">Portfolio Details</li>
                     </ol>
@@ -76,7 +76,7 @@
       </div>
       <div class="detail container mt-5 ">
         <div class="row">
-          <div class="col-8">
+          <div class="col-12 col-md-8">
             <div class="detail-box">
               <div>
                 <img src="images/portfolio-details-1.jpg" class="w-100" alt="">
@@ -89,24 +89,24 @@
               </div>
               </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <div class="card detail-card border-0">
               <div class="card-title my-2 p-3">
-                <h4 class="fw-bold">Project Information</h4>
+                <h4 class="fw-bold wow animate__bounceInRight">Project Information</h4>
                 <div class="detail-divider mt-4"></div>
               </div>
               
               <div class="card-body">
-                <p>Category: <span class="text-black-50">Web design</span></p>
-                <p>Client: <span class="text-black-50">ASU Company</span></p>
-                <p>Project Date: <span class="text-black-50">01 March, 2022</span></p>
-                <p>Project URL: <span class="text-black-50">www.example.com</span></p>
+                <p class="wow animate__bounceInRight">Category: <span class="text-black-50 ">Web design</span></p>
+                <p class="wow animate__bounceInRight">Client: <span class="text-black-50 ">ASU Company</span></p>
+                <p class="wow animate__bounceInRight">Project Date: <span class="text-black-50 ">01 March, 2022</span></p>
+                <p class="wow animate__bounceInRight">Project URL: <span class="text-black-50 ">www.example.com</span></p>
                 
               </div>
               </div>
            <div class="my-5">
-            <h4 class="fw-bold mb-3">This is an example of portfolio detail</h4>
-            <p class="text-black-50">Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+            <h4 class="fw-bold mb-3 wow animate__flipInX">This is an example of portfolio detail</h4>
+            <p class="text-black-50 wow animate__fadeInRight">Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
            </div>
           </div>
         </div>
@@ -115,9 +115,9 @@
         <div class="row">
           <div class="col-12 footer-box">
             <div class="text-center text-white mt-4">
-              <p>© Copyright DevFolio. All Rights Reserved</p>
+              <p class="wow animate__slideInLeft">© Copyright DevFolio. All Rights Reserved</p>
   
-              <p>  Designed by BootstrapMade</p>
+              <p class="wow animate__slideInRight">  Designed by BootstrapMade</p>
             </div>
   
           </div>
@@ -128,6 +128,7 @@
       <script src="vendor/way-point/jquery.waypoints.js"></script>
       <script src="vendor/jquery.counterup.min.js"></script>
       <script src="vendor/slick-1.8.0/slick/slick.js"></script>
+      <script src="vendor/WOW/wow.min.js"></script>
       <script src="main.js"></script>
       <script>
         var waypoints = $('.detail-home-title').waypoint(function(){
@@ -148,6 +149,16 @@
   autoplay: true,
   autoplaySpeed: 2000,
          });
+         wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
 	
       </script>
 </body>
